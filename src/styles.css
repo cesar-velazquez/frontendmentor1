@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Verydarkblue:(main BG): hsl(217, 54%, 11%);
+    --Verydarkblue: (card BG): hsl(216, 50%, 16%);
+    --Verydarkblue: (line): hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);    
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.container{
+    background-color:hsl(217, 54%, 11%);
+    padding: 1rem;
+    width: 100%;
+    height: 1000px;
+}
+.content{
+    background-color:hsl(216, 50%, 16%);
+    border-radius: 1rem;
+    height: auto;
+    padding: 1rem 2%;
+}
+.contenedor__padre{
+    white-space: nowrap;
+}
+.img{    
+    padding: 1rem;
+    margin: 1% 5%;
+    width: auto;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    cursor: pointer;    
+    position: relative;    
+    /* display: inline-block; */
+}
+.img:hover .mostrar__svg{
+    display: flex;
+}
+.mostrar__svg{
+    width: 10%;
+    height: 10%;
+    fill: aqua;
+}
+.mostrar__svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 216, 193, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+        color: var(--White);
+        padding: 1rem;
+        margin: 0 1%;
+        text-align: start;
+}
+.presentacion{
+    color: var(--Softblue);
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+.date{
+    display: flex;
+    margin: 5% 0;
+    color: var(--Cyan);
+}
+.days{
+    color: whitesmoke;  
+    margin-left: 40%;  
+    opacity: .5;
+}
+.linea{
+    opacity: .1;
+    margin: 0 4%;    
+}
+.autor{
+    display: flex;        
+}
+.opaco{
+    opacity: .5;
+}
+.creador{
+    color: var(--White);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+}
+.imgautor{
+    margin-top: 5%;
+    width: 50px;
+}
+
+@media(min-width:600px){
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content{        
+        max-width: 50vh;                 
+    }
+
+}
